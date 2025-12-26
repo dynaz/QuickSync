@@ -1,0 +1,15 @@
+// config.ts
+export const companyFiles = [
+  {
+    id: "COMP001",
+    name: "Head Office",
+    filePath: "C:\\QuickBooks\\Company_Files\\HeadOffice.QBW", 
+    dsnName: "QB_HeadOffice" // กรณีสร้าง System DSN ไว้แล้ว
+  },
+  {
+    id: "COMP002",
+    name: "Branch A",
+    filePath: "C:\\QuickBooks\\Company_Files\\BranchA.QBW",
+    dsnName: "QB_BranchA"
+  }
+];

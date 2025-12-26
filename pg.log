@@ -1,0 +1,200 @@
+PS C:\QuickSync> python
+[2025-12-17 21:05:30.770666] 🚀 Starting Job: QuickBooks -> PostgreSQL
+✅ Loaded 115 tables from QuickBooks_Tables_List.txt
+✅ Connected to QuickBooks via ODBC
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: Accounts (63 rows)
+   ✅ Processed table: BalanceSheetDetail (1499 rows)
+   ✅ Processed table: BalanceSheetStandard (31 rows)
+   ✅ Processed table: BalanceSheetSummary (16 rows)
+   ✅ Processed table: BillExpenseItems (74 rows)
+   ⚠️  Skipped table: BillingRate (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: BillLineItems (5479 rows)
+   ✅ Processed table: BillLinkedTransactions (1023 rows)      
+   ✅ Processed table: BillPaymentChecks (885 rows)      
+   ✅ Processed table: BillPaymentChecksAppliedTo (931 rows)      
+   ⚠️  Skipped table: BillPaymentCreditCards (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: BillPaymentCreditCardsAppliedTo (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: Bills (845 rows)      
+   ⚠️  Skipped table: BuildAssemblies (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: BuildAssemblyLineItems (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: CheckExpenseItems (119 rows)      
+   ⚠️  Skipped table: CheckLineItems (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: Checks (119 rows)      
+   ✅ Processed table: Class (3 rows)      
+   ✅ Processed table: CompanyInfo (1 rows)      
+   ⚠️  Skipped table: CreditCardChargeExpenseItems (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: CreditCardChargeLineItems (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: CreditCardCharges (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: CreditCardCreditExpenseItems (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: CreditCardCreditLineItems (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: CreditCardCredits (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: CreditCardRefunds (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: CreditMemoLineItems (1355 rows)      
+   ✅ Processed table: CreditMemoLinkedTransactions (293 rows)      
+   ✅ Processed table: CreditMemos (212 rows)      
+   ✅ Processed table: Currency (158 rows)      
+   ✅ Processed table: CustomColumns (1 rows)      
+   ⚠️  Skipped table: CustomerContacts (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: CustomerMessages (29 rows)      
+   ✅ Processed table: CustomerNotes (5 rows)      
+   ✅ Processed table: Customers (444 rows)      
+   ✅ Processed table: CustomerShippingAddresses (131 rows)      
+   ✅ Processed table: CustomerTypes (8 rows)      
+   ✅ Processed table: DateDrivenTerms (6 rows)      
+   ⏳ Processing table: DeletedEntities ...
+   ❌ Error processing DeletedEntities: Execution failed on sql 'SELECT * FROM "DeletedEntities"': ('HY000', '[HY000] 3 [60004] The ListDelType must be specified to query DeletedEntities.  Valid values are Account, BillingRate, Class, Currency, Customer, CustomerMsg, CustomerType, DateDrivenTerms, Employee, InventorySite, ItemDiscount, ItemFixedAsset, ItemGroup, ItemInventory, ItemInventoryAssembly, ItemNonInventory, ItemOtherCharge, ItemPayment, ItemSalesTax, ItemSalesTaxGroup, ItemService, ItemSubtotal, JobType, OtherName, PaymentMethod, PayrollItemNonWage, PayrollItemWage, PriceLevel, SalesRep, SalesTaxCode, ShipMethod, StandardTerms, ToDo, UnitOfMeasureSet, Vehicle, Vendor, VendorType, WorkersCompCode (-1) (SQLExecDirectW)')
+   ⏳ Processing table: DeletedTransactions ...
+   ❌ Error processing DeletedTransactions: Execution failed on sql 'SELECT * FROM "DeletedTransactions"': ('HY000', '[HY000] 3 [60004] The TxnDelType must be specified to query DeletedTransactions.  Valid values are ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, Estimate, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, TimeTracking, TransferInventory, VehicleMileage, VendorCredit (-1) (SQLExecDirectW)')
+   ✅ Processed table: DepositLineItems (20365 rows)      
+   ✅ Processed table: Deposits (8115 rows)      
+   ⚠️  Skipped table: EmployeeEarnings (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: Employees (1 rows)      
+   ⏳ Processing table: EmployeeStateTaxesDetail ...
+   ❌ Error processing EmployeeStateTaxesDetail: Execution failed on sql 'SELECT * FROM "EmployeeStateTaxesDetail"': ('HY000', '[HY000] [q:ah] The integrated application has no permission to access personal data.  The QuickBooks administrator can grant permission to access personal data through the Integrated Application preferences. (-1) (SQLExecDirectW)')
+   ✅ Processed table: EstimateLineItems (11 rows)      
+   ⚠️  Skipped table: EstimateLinkedTransactions (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: Estimates (1 rows)      
+   ✅ Processed table: Host (1 rows)      
+   ✅ Processed table: InventoryAdjustmentLineItems (1794 rows)      
+   ✅ Processed table: InventoryAdjustments (458 rows)      
+   ⏳ Processing table: InventorySites ...
+   ❌ Error processing InventorySites: Execution failed on sql 'SELECT * FROM "InventorySites"': ('HY000', '[HY000] 8 This feature is not enabled or not available in this version of QuickBooks. (-1) (SQLExecDirectW)')    
+   ✅ Processed table: InvoiceLineItems (132439 rows)      
+   ✅ Processed table: InvoiceLinkedTransactions (31995 rows)      
+   ✅ Processed table: Invoices (29992 rows)      
+   ✅ Processed table: ItemLineItems (34 rows)      
+   ⚠️  Skipped table: ItemReceiptExpenseItems (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: ItemReceiptLineItems (272 rows)      
+   ✅ Processed table: ItemReceiptLinkedTransactions (15 rows)      
+   ✅ Processed table: ItemReceipts (16 rows)      
+   ✅ Processed table: Items (1312 rows)      
+   ⚠️  Skipped table: ItemSites (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: JobTypes (2 rows)      
+   ✅ Processed table: JournalEntries (230 rows)      
+   ✅ Processed table: JournalEntryLines (460 rows)      
+   ✅ Processed table: OtherNames (5 rows)      
+   ✅ Processed table: PaymentMethods (9 rows)      
+   ⏳ Processing table: PayrollItemDetail ...
+   ❌ Error processing PayrollItemDetail: Execution failed on sql 'SELECT * FROM "PayrollItemDetail"': ('HY000', '[HY000] [q:ah] The integrated application has no permission to access personal data.  The QuickBooks administrator can grant permission to access personal data through the Integrated Application preferences. (-1) (SQLExecDirectW)')
+   ⏳ Processing table: PayrollNonWageItems ...
+   ❌ Error processing PayrollNonWageItems: Execution failed on sql 'SELECT * FROM "PayrollNonWageItems"': ('HY000', '[HY000] 8 There has been an internal error when processing the request. (-1) (SQLExecDirectW)')        
+   ⏳ Processing table: PayrollReviewDetail ...
+   ❌ Error processing PayrollReviewDetail: Execution failed on sql 'SELECT * FROM "PayrollReviewDetail"': ('HY000', '[HY000] [q:ah] The integrated application has no permission to access personal data.  The QuickBooks administrator can grant permission to access personal data through the Integrated Application preferences. (-1) (SQLExecDirectW)')
+   ⏳ Processing table: PayrollTransactionDetail ...
+   ❌ Error processing PayrollTransactionDetail: Execution failed on sql 'SELECT * FROM "PayrollTransactionDetail"': ('HY000', '[HY000] [q:ah] The integrated application has no permission to access personal data.  The QuickBooks administrator can grant permission to access personal data through the Integrated Application preferences. (-1) (SQLExecDirectW)')
+   ⏳ Processing table: PayrollTransactionsByPayee ...
+   ❌ Error processing PayrollTransactionsByPayee: Execution failed on sql 'SELECT * FROM "PayrollTransactionsByPayee"': ('HY000', '[HY000] [q:ah] The integrated application has no permission to access personal data.  The QuickBooks administrator can grant permission to access personal data through the Integrated Application preferences. (-1) (SQLExecDirectW)')
+   ⚠️  Skipped table: PayrollWageItems (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: Preferences (1 rows)      
+   ✅ Processed table: PriceLevelPerItem (1 rows)      
+   ✅ Processed table: PriceLevels (2 rows)      
+   ⏳ Processing table: ProfitAndLossDetail ...
+   ❌ Error processing ProfitAndLossDetail: ('HY000', "[HY000] 11 Error obtaining value '1100 ? Accounts Receivable' for column 'Amount'. Failed to convert  to datatype: 'double'. The original datatype of the column is: 'double'. Original Exception: Error parsing double value [1100 ? Accounts Receivable]. (-1) (SQLGetData)")
+   ✅ Processed table: ProfitAndLossStandard (15 rows)      
+   ✅ Processed table: PurchaseOrderLineItems (2061 rows)      
+   ✅ Processed table: PurchaseOrderLinkedTransactions (113 rows)      
+   ✅ Processed table: PurchaseOrders (117 rows)      
+   ✅ Processed table: ReceivePayments (20646 rows)      
+   ✅ Processed table: ReceivePaymentsAppliedTo (31576 rows)      
+   ✅ Processed table: ReceivePaymentToDeposit (1 rows)      
+   ✅ Processed table: SalesOrderLineItems (173 rows)      
+   ✅ Processed table: SalesOrderLinkedTransactions (14 rows)      
+   ✅ Processed table: SalesOrders (13 rows)      
+   ⚠️  Skipped table: SalesReceiptLineItems (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: SalesReceipts (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: SalesReps (5 rows)      
+   ✅ Processed table: SalesTaxCodes (7 rows)      
+   ✅ Processed table: SalesTaxItems (23 rows)      
+   ✅ Processed table: ShippingMethods (10 rows)      
+   ✅ Processed table: StandardTerms (20 rows)      
+   ⚠️  Skipped table: StatementChargeLinkedTransactions (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: StatementCharges (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: Templates (60 rows)      
+   ⚠️  Skipped table: TimeTracking (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: ToDo (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: Transactions (61649 rows)      
+   ⏳ Processing table: TransferInventory ...
+   ❌ Error processing TransferInventory: Execution failed on sql 'SELECT * FROM "TransferInventory"': ('HY000', '[HY000] 8 This feature is not enabled or not available in this version of QuickBooks. (-1) (SQLExecDirectW)')
+   ⏳ Processing table: TransferInventoryLineItems ...
+   ❌ Error processing TransferInventoryLineItems: Execution failed on sql 'SELECT * FROM "TransferInventoryLineItems"': ('HY000', '[HY000] 8 This feature is not enabled or not available in this version of QuickBooks. (-1) (SQLExecDirectW)')
+   ⚠️  Skipped table: Transfers (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+
+   ❌ Error processing UnitOfMeasure: Execution failed on sql 'SELECT * FROM "UnitOfMeasure"': ('HY000', '[HY000] 8 This feature is not enabled or not available in this version of QuickBooks. (-1) (SQLExecDirectW)')      
+   ⏳ Processing table: UnitOfMeasureDefaultUnits ...
+   ❌ Error processing UnitOfMeasureDefaultUnits: Execution failed on sql 'SELECT * FROM "UnitOfMeasureDefaultUnits"': ('HY000', '[HY000] 8 This feature is not enabled or not available in this version of QuickBooks. (-1) (SQLExecDirectW)')
+   ⚠️  Skipped table: VehicleMileage (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: VendorCreditExpenseItems (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: VendorCreditLineItems (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: VendorCreditLinkedTransactions (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ⚠️  Skipped table: VendorCredits (No Data)
+C:\QuickSync\ETL_Auto.py:65: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, qb_conn)
+   ✅ Processed table: Vendors (42 rows)      
+   ✅ Processed table: VendorTypes (5 rows)      
+   ⏳ Processing table: WorkersCompCodeLines ...
+   ❌ Error processing WorkersCompCodeLines: Execution failed on sql 'SELECT * FROM "WorkersCompCodeLines"': ('HY000', '[HY000] 8 The request has not been processed. (-1) (SQLExecDirectW)')
+   ⏳ Processing table: WorkersCompCodes ...
+   ❌ Error processing WorkersCompCodes: Execution failed on sql 'SELECT * FROM "WorkersCompCodes"': ('HY000', '[HY000] 8 The request has not been processed. (-1) (SQLExecDirectW)')
+[2025-12-17 23:00:35.096981] 🏁 Job Completed Successfully.
