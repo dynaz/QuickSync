@@ -6,14 +6,14 @@ import datetime
 
 # ================= CONFIGURATION =================
 # 1. QuickBooks Source (ODBC)
-QB_DSN_NAME = "MAHA"
+QB_DSN_NAME = "Internal"
 
 # 2. PostgreSQL Destination
 PG_HOST = "localhost"
 PG_PORT = "5432"
-PG_DB = "MAHA"
+PG_DB = "Internal"
 PG_USER = "postgres"
-PG_PASS = "9999" 
+PG_PASS = "@Dmin2019" 
 
 # 3. รายชื่อตารางอ่านจากไฟล์ .txt
 # =================================================
@@ -37,7 +37,7 @@ def load_tables_from_file(filepath):
         return tables
     except Exception as e:
         print(f"❌ Failed to load tables from file: {e}")
-        return TARGET_TABLES
+        return []
 
 def main():
     print(f"[{datetime.datetime.now()}] 🚀 Starting Job: QuickBooks -> PostgreSQL")
@@ -67,12 +67,19 @@ def main():
             # แปลงชื่อ Column เป็นตัวพิมพ์เล็ก
             df.columns = [c.lower() for c in df.columns]
             
-            # ยัดลง Postgres
+            # ยัดลง Postgres - สร้างตารางเสมอ แม้ไม่มีข้อมูล
             if not df.empty:
                 df.to_sql(table.lower(), pg_engine, if_exists='replace', index=False, chunksize=1000)
                 print(f"   ✅ Processed table: {table} ({len(df)} rows)      ")
             else:
-                print(f"   ⚠️  Skipped table: {table} (No Data)           ")
+                # สร้างตารางแม้ไม่มีข้อมูล โดยใช้ WHERE 1=0 เพื่อดึง Schema
+                # วิธีนี้จะได้โครงสร้างตารางโดยไม่ต้องดึงข้อมูลจริง
+                schema_query = f'SELECT * FROM "{table}" WHERE 1=0'
+                schema_df = pd.read_sql(schema_query, qb_conn)
+                schema_df.columns = [c.lower() for c in schema_df.columns]
+                # สร้างตารางด้วย DataFrame ว่างที่มี Schema ถูกต้อง
+                schema_df.to_sql(table.lower(), pg_engine, if_exists='replace', index=False)
+                print(f"   ✅ Created table: {table} (0 rows, schema created)      ")
 
         except Exception as e:
             print(f"\n   ❌ Error processing {table}: {e}")
